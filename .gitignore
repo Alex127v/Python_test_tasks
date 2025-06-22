@@ -1,3 +1,13 @@
+# IDE и окружение
+.idea/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Pytest
+.pytest_cache/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
