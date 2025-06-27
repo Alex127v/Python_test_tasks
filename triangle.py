@@ -5,11 +5,12 @@
 
 
 def get_triangle_kind(a: int, b: int, c: int) -> str:
-    if a == b and b == c:
+    if a == b == c:
         return 'Равносторонний'
-    elif a == b or b == c or a == c:
+    if a == b or b == c or a == c:
         return "Равнобедренный"
     return 'Простой'
+
 
 if __name__ == '__main__':
     assert get_triangle_kind(11, 11, 11) == 'Равносторонний'

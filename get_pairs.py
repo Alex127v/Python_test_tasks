@@ -6,19 +6,18 @@
 """
 
 
-def get_pairs_number(lst: list[int], n: int) -> list[tuple]:
-    list_tuple = []
-    unique_list = list(set(lst))
-    unique_n = len(unique_list)
-    i = 1
-    for num_1 in range(unique_n - 1):
-        for num_2 in range(i, unique_n):
-            if unique_list[num_1] + unique_list[num_2] == n:
-                list_tuple.append(tuple([unique_list[num_1], unique_list[num_2]]))
-        i += 1
-    return list_tuple
+def get_pairs_number(lst: list[int], N: int) -> list[tuple[int, int]]:
+    set_pairs = set()
+    for n in lst:
+        for i in lst:
+            if n + i == N:
+                set_pairs.add((n, i) if n < i else (i, n))
+    return list(set_pairs)
+
+
 if __name__ == '__main__':
     assert get_pairs_number([1, 2, 4, 3, 5, 2], 7) == [(2, 5), (3, 4)]
+    print('All pairs found')
 
 
 

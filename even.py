@@ -6,9 +6,8 @@
 
 
 def is_even(n: int) -> bool:
-    if n%2 == 0:
-        return True
-    return False
+    return n % 2 == 0
+
 
 if __name__ == '__main__':
     assert is_even(2), 'Test number 2'
