@@ -1,4 +1,4 @@
-from list_growing import is_list_growing
+from digit_math.list_growing import is_list_growing
 
 def test_range_1():
     assert is_list_growing([1.2, 2.4, 3.1, 8.2])

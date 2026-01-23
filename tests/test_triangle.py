@@ -1,4 +1,4 @@
-from triangle import get_triangle_kind
+from digit_math.triangle import get_triangle_kind
 
 def test_equilateral():
     assert get_triangle_kind(11, 11, 11) == 'Равносторонний'

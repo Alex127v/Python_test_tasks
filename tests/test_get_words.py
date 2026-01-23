@@ -1,4 +1,4 @@
-from get_words import get_words
+from string_st.get_words import get_words
 
 def test_phrase_1():
     assert get_words('Александр Сергеевич Пушкин') == ['Александр', 'Сергеевич', 'Пушкин']

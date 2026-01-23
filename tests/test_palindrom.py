@@ -1,4 +1,4 @@
-from palindrom import is_palindrom
+from string_st.palindrom import is_palindrom
 
 def test_first_phrase():
     assert is_palindrom('а роза упала на лапу азора')
